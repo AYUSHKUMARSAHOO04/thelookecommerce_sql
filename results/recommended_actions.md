@@ -1,0 +1,19 @@
+# Recommended Actions
+
+Prioritized, evidence-based recommendations drawn from [`business_insights.md`](business_insights.md) and [`decision_analysis.md`](decision_analysis.md). No recommendation below claims a quantified expected financial impact beyond what the underlying data directly supports.
+
+| Priority | Area | Evidence | Recommendation | Expected Business Objective |
+|---|---|---|---|---|
+| High | Retention | Repeat customers average $216.49 revenue vs. $86.36 for one-time customers (2.5x); repeat customers are 37.3% of ordered customers but 59.9% of revenue | Prioritize retention initiatives, post-purchase engagement, and repeat-purchase campaigns targeted at converting first-time buyers | Increase repeat-purchase rate and repeat revenue share |
+| High | Customer Segmentation | VIP segment (0.20% of customers) generates 1.69% of revenue at $1,133.01 avg. revenue/customer — 14.5x the Low Value segment average | Build a dedicated relationship/retention program for the High Value + VIP segments (1,974 customers combined) | Protect and grow the highest-value customer cohort |
+| High | Category Strategy | Outerwear & Coats + Jeans = 23.97% of total revenue; Outerwear & Coats also the #1 revenue category at 12.45% | Protect inventory availability and marketing support for the top two revenue-driving categories | Protect core revenue drivers |
+| Medium | Profitability | Margin varies from 37.82% (Clothing Sets) to 62.03% (Blazers & Jackets); Outerwear & Coats (#1 by revenue) ranks only 8th of 26 by margin | Weigh margin alongside revenue rank when prioritizing merchandising and marketing investment, not revenue alone | Improve blended profit margin |
+| Medium | Returns | Platform-wide return rate is 9.83%, with category rates clustered tightly (9.09%–10.81%) — no single-category outlier | Investigate root causes of returns platform-wide rather than category-specific (no reason field exists in this dataset to explain causes) | Reduce return-related revenue leakage |
+| Medium | Operations | Delivery time is uniform across distribution centers (3.96–4.01 days); Charleston SC has the highest return rate (10.10%) vs. Chicago IL (9.65%) | Review Charleston SC's order/return handling process over a longer observation window before concluding it's structural | Improve fulfillment consistency |
+| Medium | Inventory | Sell-through rate is 37.05% (180,919 of 488,373 units); Intimates, Jeans, and Tops & Tees have the largest unsold counts | Consider reviewing replenishment/markdown strategy for the highest-unsold categories, once inventory age data is available to confirm which stock is genuinely slow-moving | Improve inventory efficiency |
+| Medium | Marketing | Search drives 69.63% of revenue but converts marginally lower (79.91%) than Display (81.16%) and Organic (80.52%) | Investigate the traffic-quality difference behind Search's lower conversion rate; note that CAC/ROI cannot be assessed without spend data | Improve conversion on the largest traffic channel |
+| Low | Data Validation | August 2026 revenue jumped 45.43% MoM alongside a sharp drop in repeat-customer rate (45.22% → 29.78%) — the largest anomaly in the 92-month series | Validate the August 2026 figures (partial-month effect, data pipeline, or genuine event) before using them in any forward-looking narrative | Ensure reporting accuracy before strategic use |
+
+## A note on scope
+
+These recommendations are directional and evidence-based, not prescriptive business decisions — they identify where the data points to an opportunity or risk worth investigating further. None of them assume information not present in `bigquery-public-data.thelook_ecommerce` (e.g., marketing spend, return reason codes, or inventory age), and each is traceable back to a specific figure in [`decision_analysis.md`](decision_analysis.md).
